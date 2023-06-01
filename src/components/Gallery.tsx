@@ -16,7 +16,7 @@ function Gallery(){
 	return (
 		<>
 		<h2 className="text-center text-6xl">Gallery</h2>
-		<div id="default-carousel" className="relative w-full mx-5" data-carousel="slide">
+		<div id="default-carousel" className="relative w-full mx-2" data-carousel="slide">
     
     <div className="relative h-screen m-4 overflow-hidden rounded-lg bg-slate-200">
         
