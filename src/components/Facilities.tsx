@@ -10,28 +10,24 @@ export default function Facilities(){
 	{id:3, name:"Cold Orthopaedics", description:<span>In a short span, Vardaan hospital has carved a niche name for itself in <strong>elective orthopaedic surgeries like -Total knee & hip replacement, spine surgery and arthroscopic ligament reconstructions,</strong> the orthopaedic division being popularly known as ‘Cold Orthopaedics’.</span>, img:Ortho},
 	{id:4, name:"Highly Skilled Team", description:<span><strong>Ability to handle advanced and high risk obstetrics on regular basis</strong> has also resulted in reverse patient drain from many major cities around to our hospital in Gaya over last few years.</span>, img:Team},
 		]
-	
-	function FacilityCard({value}){
-		return value.id%2==1?(
-			<div key={value.id} className="mx-5 mt-5 grid h-[30%] sm:h-[20%] gap-4 overflow-hidden rounded p-4 sm:grid-cols-2 sm:grid-rows-2 bg-slate-50">
-				<img className="row-span-2 rounded mx-auto sm:my-auto sm:w-[90%]  bg-slate-100 shadow-md shadow-slate-600" src={value.img} alt={value.name} />
-				<h2 className="row-span-1 rounded my-auto mx-auto text-center text-4xl font-semibold">{value.name}</h2>
-				<p className="text-lg rounded">{value.description}</p>
-			</div>
-			):(<div key={value.id} className="mx-5 mt-5 grid h-[30%] sm:h-[20%] gap-4 overflow-hidden rounded p-4 sm:grid-cols-2 sm:grid-rows-2 bg-slate-50">
-				
-				<h2 className="row-span-1 rounded my-auto mx-auto text-center text-4xl font-semibold">{value.name}</h2>
-				<img className="row-span-2 rounded mx-auto sm:my-auto sm:w-[90%]  bg-slate-100 shadow-md shadow-slate-600" src={value.img} alt={value.name} />
-				<p className="text-lg rounded">{value.description}</p>
-
-			</div>)
-	}
 
 
 	return (
 		<section>
 			<h2 className="text-center text-6xl py-10">Facilites</h2>
-			{facilitiesObject.map((obj)=>(<FacilityCard key={obj.id} value={obj}/>))}
+			{facilitiesObject.map((obj)=>(obj.id%2==1?(
+			<div key={obj.id} className="mx-5 mt-5 grid h-[30%] sm:h-[20%] gap-4 overflow-hidden rounded p-4 sm:grid-cols-2 sm:grid-rows-2 bg-slate-50">
+				<img className="row-span-2 rounded mx-auto sm:my-auto sm:w-[90%]  bg-slate-100 shadow-md shadow-slate-600" src={obj.img} alt={obj.name} />
+				<h2 className="row-span-1 rounded my-auto mx-auto text-center text-4xl font-semibold">{obj.name}</h2>
+				<p className="text-lg rounded">{obj.description}</p>
+			</div>
+			):(<div key={obj.id} className="mx-5 mt-5 grid h-[30%] sm:h-[20%] gap-4 overflow-hidden rounded p-4 sm:grid-cols-2 sm:grid-rows-2 bg-slate-50">
+				
+				<h2 className="row-span-1 rounded my-auto mx-auto text-center text-4xl font-semibold">{obj.name}</h2>
+				<img className="row-span-2 rounded mx-auto sm:my-auto sm:w-[90%]  bg-slate-100 shadow-md shadow-slate-600" src={obj.img} alt={obj.name} />
+				<p className="text-lg rounded">{obj.description}</p>
+
+			</div>)))}
 		</section>
 		)
 }

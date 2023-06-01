@@ -20,7 +20,7 @@ export default function Footer(){
     			</div>
   			</div>
   
-  			<iframe className="border-none col-span-1 w-44 h-44 mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3563559092077!2d84.9986428!3d24.7832483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32bd204dfb3f9%3A0xb146c96ce50e654b!2sVardaan%20Hospital%20%26%20Maternity%20Centre!5e0!3m2!1sen!2sin!4v1685556938775!5m2!1sen!2sin"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+  			<iframe className="border-none col-span-1 w-44 h-44 mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3563559092077!2d84.9986428!3d24.7832483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32bd204dfb3f9%3A0xb146c96ce50e654b!2sVardaan%20Hospital%20%26%20Maternity%20Centre!5e0!3m2!1sen!2sin!4v1685556938775!5m2!1sen!2sin"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
   			<span className="text-center col-span-3 text-gray-400 mx-auto">© 2023 Vardaan Hospital. All rights reserved. </span>
 		</footer>
 
