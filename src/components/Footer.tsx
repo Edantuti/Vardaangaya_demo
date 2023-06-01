@@ -8,7 +8,7 @@ export default function Footer(){
   
   			<div className="mx-auto grid col-span-2 gap-4">
     			<div className="flex flex-col">
-      				<img className="w-44 h-44 p-6" alt="" src={Logo} />
+      				<img className="w-40 h-40 p-6" alt="" src={Logo} />
       				<div className="mx-auto p-2 grid grid-cols-2 md:grid-cols-2 gap-8">
         				<a className="social-icons__icon w-6 h-6" href="https://www.facebook.com/Vardaan-hospital-and-maternity-centre-105063481385168/" aria-label="Open Facebook in a new tab" rel="noopener noreferrer" target="_blank">
 							<svg role="img" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg>
