@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+  /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     // Or if using `src` directory:
@@ -6,7 +6,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+
+    },
+    fontFamily:{
+      'roboto':['Roboto Mono', 'monospace']
+    }
   },
   plugins: [
     require('flowbite/plugin')

@@ -5,8 +5,8 @@ import Anupam from "../assets/DrAnupam.jpg"
 export default function Doctors(){
 	return (
 		<>
-		<h2 className="text-6xl text-center py-10">Our Doctors</h2>
-		<div className="flex md:flex-row flex-col gap-4 m-4">
+		<h2 className="text-6xl text-center py-10 font-mono">Our Doctors</h2>
+		<div className="flex md:flex-row flex-col gap-4 m-4 font-roboto">
   			<div className="mx-auto flex-row sm:w-[550px] w-[100%] gap-4 overflow-hidden rounded bg-slate-100 shadow-md shadow-slate-300">
     			<img src={Anupam} alt="Dr. Kumar Anupam" className="mx-auto my-16 h-auto w-72 rounded" />
     			<h3 className="text-center text-3xl">Dr. Kumar Anupam</h3>
@@ -16,8 +16,8 @@ export default function Doctors(){
   			</div>
         	<div className="mx-auto flex-row sm:w-[550px] w-[100%] gap-4 overflow-hidden rounded bg-slate-100 shadow-md shadow-slate-300">
     			<img src={Megha} alt="Dr. Megha Sinha" className="mx-auto my-16 h-auto w-72 rounded" />
-    			<h3 className="text-center text-3xl">Dr. Megha Sinha</h3>
-    			<p className="text-center p-4 font-semibold">Consultant Obstetrics and Gynecologist</p>
+    			<h3 className="text-center text-3xl ">Dr. Megha Sinha</h3>
+    			<p className="text-center p-4 font-semibold ">Consultant Obstetrics and Gynecologist</p>
     			<p className="text-center px-8">MBBS, MS(OBS & GYNAE) Safdarjung Hospital, MRCOG (I), F MAS, F ART, Ex-Senior resident Ram Manohar Lohia Hospital</p>
     			<p className="mx-10 my-6 p-4 first-letter:text-3xl">Dr. Megha Sinha, MS is an alumnus of Safdarjung Hospital, New Delhi. Having trained at Asia’s busiest Obstetric and Gynaecology Unit, she holds plethora of experience in handling high risk obstetrics like Abruption, placenta Previa, placenta accreta and previous lscs. She also holds fellowship in minimal access surgery and assisted reproductive technology. She runs a dedicated 24*7 obstetric unit handling round the clock emergency.</p>
   			</div>
