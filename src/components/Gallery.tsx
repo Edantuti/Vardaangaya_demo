@@ -17,24 +17,24 @@ function Gallery(){
         <>
         <h2 className="text-center text-5xl my-7">Gallery</h2>
 		<div className="flex md:flex-row flex-col gap-4 m-6">
-            <div className="flex flex-col gap-4">
+            <div className="grid grid-flow-row gap-4">
                 <img className="rounded shadow-md shadow-slate-300" src={Image1} alt="image 1"/>
-                <img className="rounded shadow-md shadow-slate-300 md:h-auto h-64" src={Image2} alt="image 2"/>
+                <img className="rounded shadow-md shadow-slate-300" src={Image2} alt="image 2"/>
             </div>
-            <div className="flex flex-col  gap-4">
-                <img className="rounded shadow-md shadow-slate-300  md:h-auto h-64" src={Image3} alt="image 3"/>
+            <div className="grid grid-flow-row gap-4">
+                <img className="rounded shadow-md shadow-slate-300" src={Image3} alt="image 3"/>
                 <img className="rounded shadow-md shadow-slate-300" src={Image4} alt="image 4"/>
             </div>
-            <div className="flex flex-col  gap-4">
+            <div className="grid grid-flow-row gap-4">
                 <img className="rounded shadow-md shadow-slate-300 " src={Image5} alt="image 5"/>
                 <img className="rounded shadow-md shadow-slate-300 " src={Image6} alt="image 6"/>
             </div>
-            <div className="flex flex-col  gap-4">
+            <div className="grid grid-flow-row gap-4">
                 <img className="rounded shadow-md shadow-slate-300" src={Image7} alt="image 7"/>
                 <img className="rounded shadow-md shadow-slate-300" src={Image8} alt="image 8"/>
             </div>
-            <div className="flex flex-col  gap-4">
-                <img className="rounded shadow-md shadow-slate-300 md:h-auto h-64" src={Image9} alt="image 9"/>
+            <div className="grid grid-flow-row gap-4">
+                <img className="rounded shadow-md shadow-slate-300" src={Image9} alt="image 9"/>
                 <img className="rounded shadow-md shadow-slate-300" src={Image11} alt="image 11"/>
             </div>
         </div>
