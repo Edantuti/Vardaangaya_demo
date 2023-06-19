@@ -12,8 +12,8 @@ function App() {
       <NavBar/>
       <Introduction/>
       <About/>
-      <Facilities/>
       <Doctors/>
+      <Facilities/>
       <Gallery/>
       <Footer/>
     </>
