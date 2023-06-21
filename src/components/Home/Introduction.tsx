@@ -1,4 +1,4 @@
-import Intro from "../assets/Intro.jpg"
+import Intro from "../../assets/Intro.jpg"
 
 
 export default function Introduction(){

@@ -1,7 +1,7 @@
-import OT from "../assets/World_class_OT.jpg"
-import Infra from "../assets/Infra.jpg"
-import Ortho from "../assets/Ortho.jpg"
-import Team from "../assets/Team.jpg"
+import OT from "../../assets/World_class_OT.jpg"
+import Infra from "../../assets/Infra.jpg"
+import Ortho from "../../assets/Ortho.jpg"
+import Team from "../../assets/Team.jpg"
 
 export default function Facilities(){
 	const facilitiesObject = [
