@@ -1,10 +1,15 @@
+import { FC } from "react"
 import { Outlet} from "react-router-dom"
 
-export default function Menu({visible}){
+interface IMenuProps{
+    visible:boolean
+}
+
+const Menu: FC<IMenuProps> = (props): JSX.Element => {
     
     return (
         <>
-            <nav className={visible?"fixed mb-4 bg-white h-full top-0 right-0 transition-all":"hidden fixed mb-4 bg-white h-full top-0 right-0 transition-all"}>
+            <nav className={props.visible?"fixed mb-4 bg-white h-full top-0 right-0 transition-all":"hidden fixed mb-4 bg-white h-full top-0 right-0 transition-all"}>
                 <ul className="grid grid-flow-row w-96 mx-auto pt-56">
                     <li  className="px-2 py-1">Home</li>
                     <li  className="px-2 py-1">Speciality</li>
@@ -16,3 +21,5 @@ export default function Menu({visible}){
         </>
     )
 }
+
+export default Menu
