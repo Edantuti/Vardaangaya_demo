@@ -2,7 +2,6 @@
 export default {
   content: [
     // Or if using `src` directory:
-    "./node_modules/flowbite/**/*.js",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -14,7 +13,6 @@ export default {
     }
   },
   plugins: [
-    require('flowbite/plugin')
     ],
 }
 
