@@ -13,7 +13,7 @@ export default function Ortho(){
         <>
             <article className="grid grid-rows-2 sm:grid-cols-2 mx-4 rounded-sm shadow">
                 <img src={Image4} alt="facilities" className="h-auto w-[80%] rounded mx-auto my-auto shadow  row-span-2" />
-                    <div className="my-auto sm:px-10 row-span-2">
+                    <div className="my-auto px-10 row-span-2">
                         <h2 className="text-2xl font-roboto mt-4">Orthopaedics</h2>
                         <ul className="flex flex-col gap-4 text-xl font-mono my-6"> 
                         {orthoObjectList.map((obj)=>(<li key={obj.id} className="flex flex-col">

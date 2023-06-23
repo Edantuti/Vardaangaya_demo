@@ -12,7 +12,7 @@ export default function Infra(){
     return (
         <>
             <article className="grid grid-rows-2 sm:grid-cols-2 mx-4 rounded-sm shadow">
-                <div className="my-auto sm:px-10 row-span-2">
+                <div className="my-auto px-10 row-span-2">
                     <h2 className="text-2xl font-roboto mt-4">Infrastructure @ Vardaan</h2>
                     <ul className="flex flex-col gap-4 text-xl font-mono my-6 row-span-2">
                         {infraObjectList.map((obj)=>(
