@@ -15,19 +15,15 @@ export default function Facilities(){
 	return (
 		<section>
 			<h2 className="text-center text-6xl py-10">Facilites</h2>
-			{facilitiesObject.map((obj)=>(obj.id%2==1?(
-			<div key={obj.id} className="mx-5 mt-5 grid h-[30%] sm:h-[20%] gap-4 overflow-hidden rounded p-4 sm:grid-cols-2 sm:grid-rows-2 bg-slate-50">
-				<img className="row-span-2 rounded mx-auto sm:my-auto sm:w-[90%]  bg-slate-100 shadow-md shadow-slate-600" src={obj.img} alt={obj.name} />
-				<h2 className="row-span-1 rounded my-auto mx-auto text-center text-4xl font-mono">{obj.name}</h2>
-				<p className="text-lg rounded font-roboto">{obj.description}</p>
-			</div>
-			):(<div key={obj.id} className="mx-5 mt-5 grid h-[30%] sm:h-[20%] gap-4 overflow-hidden rounded p-4 sm:grid-cols-2 sm:grid-rows-2 bg-slate-50">
-				
-				<h2 className="row-span-1 rounded my-auto mx-auto text-center text-4xl font-mono">{obj.name}</h2>
-				<img className="row-span-2 rounded mx-auto sm:my-auto sm:w-[90%]  bg-slate-100 shadow-md shadow-slate-600" src={obj.img} alt={obj.name} />
-				<p className="text-lg rounded font-roboto">{obj.description}</p>
-
-			</div>)))}
+			{facilitiesObject.map((obj)=>(
+				<div key={obj.id} className="mx-5 mt-5 grid h-[30%] sm:h-[20%] gap-4 overflow-hidden rounded p-4 grid-rows-2  sm:grid-cols-2  bg-slate-50">
+					<img className={(obj.id%2)===1?"row-span-2 rounded mx-auto sm:my-auto sm:w-[90%] bg-slate-100 shadow-md shadow-slate-600 order-1":"row-span-2 rounded mx-auto sm:my-auto sm:w-[90%]  bg-slate-100 shadow-md shadow-slate-600 order-1 md:order-2"} src={obj.img} alt={obj.name} />
+					<div className={(obj.id%2)===1?"my-auto flex flex-col gap-10 row-span-2 order-2":"my-auto flex flex-col gap-10 row-span-2 order-2 md:order-1"}>
+						<h2 className="rounded my-auto mx-auto text-center text-4xl font-mono">{obj.name}</h2>
+						<p className="text-lg rounded font-roboto">{obj.description}</p>
+					</div>
+				</div>
+			))}
 		</section>
 		)
 }
