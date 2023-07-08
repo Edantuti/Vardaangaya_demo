@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Image8 from "../../assets/gallery/image8.jpg"
 
 export default function Gynae(){
@@ -19,7 +20,7 @@ export default function Gynae(){
                             <li key={obj.id} className="flex flex-col">
                                 <h3>{obj.title}</h3>
                                 {obj.description && <p className="line-clamp-1 text-sm">{obj.description}</p>}
-                                {obj.url && <a href={`gynae/${obj.url}`} className="text-xs text-blue-600">Read more</a>}
+                                {obj.url && <Link to={`/gynae/${obj.url}`} className="text-xs text-blue-600">Read more</Link>}
                             </li>
                         ))}
                     </ul>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Image4 from "../../assets/gallery/image4.jpg"
 
 export default function Ortho(){
@@ -19,7 +20,7 @@ export default function Ortho(){
                         {orthoObjectList.map((obj)=>(<li key={obj.id} className="flex flex-col">
                                 <h3>{obj.title}</h3>
                                 {obj.description && <p className="line-clamp-2 text-sm">{obj.description}</p>}
-                                {obj.url && <a href={`ortho/${obj.url}`} className="text-blue-600 text-xs">Read more</a>}
+                                {obj.url && <Link to={`/ortho/${obj.url}`} className="text-blue-600 text-xs">Read more</Link>}
                             </li>)
                         )}
                         </ul>

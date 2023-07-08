@@ -9,12 +9,19 @@ import Speciality from './pages/Speciality.tsx'
 import Updates from './pages/Updates.tsx'
 import Contact from './pages/Contact.tsx'
 import ErrorElement from './pages/Error.tsx'
+import Post from './pages/Post.tsx'
+
+import PostLoader from './loaderFunctions/PostLoader.ts'
 
 const route = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>} errorElement={<ErrorElement/>}>
       <Route errorElement={<ErrorElement/>}/>
       <Route index element={<Home/>}/>
+      <Route path="ortho/:name" loader={PostLoader} element={<Post/>}/>
+      <Route path="gynae/:name" loader={PostLoader} element={<Post/>}/>
+      <Route path="facilities/:name" loader={PostLoader} element={<Post/>}/>
+      <Route path="infra/:name" loader={PostLoader} element={<Post/>}/>
       <Route path='speciality' element={<Speciality/>}/>
       <Route path='updates' element={<Updates/>}/>
       <Route path='contact' element={<Contact/>}/>

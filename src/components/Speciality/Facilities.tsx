@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom"
 import XRay from "../../assets/Infra.jpg"
 
 
@@ -20,7 +21,7 @@ export default function Facilities(){
                     {facilitiesObjectList.map((obj)=>(<li key={obj.id} className="flex flex-col">
                         <h3>{obj.title}</h3>
                         <p className="line-clamp-1 text-sm">{obj.description}</p>
-                        <a href={`facilities/${obj.url}`} className="text-blue-600 text-xs">Read more</a>
+                        <Link to={`/facilities/${obj.url}`} className="text-blue-600 text-xs">Read more</Link>
                     </li>))}
                 </ul>
             </div>

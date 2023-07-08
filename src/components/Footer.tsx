@@ -4,7 +4,7 @@ import Logo from "../assets/Site_Icon.png"
 
 export default function Footer(){
 	return (
-		<footer className="mx-4 sm:grid flex flex-col sm:grid-cols-3 sm:grid-rows-1 gap-4 bg-blue-400 p-4 rounded-tl rounded-tr">
+		<footer className=" mt-6 mx-4 sm:grid flex flex-col sm:grid-cols-3 sm:grid-rows-1 gap-4 bg-blue-400 p-4 rounded-tl rounded-tr bottom-0 ">
 			<div className="mx-auto grid col-span-2 gap-4">
 				<div className="flex flex-col">
 					<img className="w-40 h-40 p-6" alt="" src={Logo} />
