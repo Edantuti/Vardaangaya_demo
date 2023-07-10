@@ -1,7 +1,17 @@
+import KneeReplacement1 from "./assets/Total_Knee_Replacement.png"
+import KneeReplacement2 from "./assets/After knee replacement, walking in two days.png"
+// import KneeReplacement3 from "./assets/After-Knee_replacement 2.png"
+// import KneeReplacement4 from "./assets/After-Knee_replacement1 .png"
+import HipJoint1 from "./assets/After_HipJoint replacement 2.png"
+import HipJoint2 from "./assets/After_HipJoint replacement.png"
+import Spine from "./assets/Spine Surgery.png"
+
+
 interface IPost{
     post_name:string,
     post_content:Array<string>,
     url:string,
+    image:Array<string>
 }
 
 
@@ -12,27 +22,32 @@ PostMap.set("facilities",
         {
             post_name:"X-Ray Centre (High frequency X-ray with CareStream computerised radiography)",
             post_content:[],
-            url:"x-ray"
+            url:"x-ray",
+            image:[]
         },
         {
             post_name:"Ultrasound",
             post_content:[],
-            url:"ultrasound"
+            url:"ultrasound",
+            image:[]
         },
         {
             post_name:"Physiotherapy Centre (with Sports Rehabilitation)",
             post_content:[],
-            url:"physiotherapy"
+            url:"physiotherapy",
+            image:[]
         },
         {
             post_name:"24x7 In-House Pharmacy",
             post_content:[],
-            url:"pharmacy"
+            url:"pharmacy",
+            image:[]
         },
         {
             post_name:"Pathology collection centre in collaboration with Global Diagnostics, a channel partner of Lal Path Labs, New Delhi",
             post_content:[],
-            url:"pathology"
+            url:"pathology",
+            image:[]
         }
     ]
 )
@@ -41,32 +56,38 @@ PostMap.set("infra",
         {
             post_name:"State of the art Operation Theatre (OT) with active infection control program",
             post_content:[],
-            url:"operating%20theatre"
+            url:"operating%20theatre",
+            image:[]
         },
         {
             post_name:"Intensive care and life support",
             post_content:[],
-            url:"intensive%20care%20and%20life%20support"
+            url:"intensive%20care%20and%20life%20support",
+            image:[]
         },
         {
             post_name:"Central Sterilisation Services through State of the Art Autoclaves",
             post_content:[],
-            url:"central%20sterilisation%20services"
+            url:"central%20sterilisation%20services",
+            image:[]
         },
         {
             post_name:"Air-conditioned Patient Waiting Room",
             post_content:[],
-            url:"air-conditioned%20waiting%20room"
+            url:"air-conditioned%20waiting%20room",
+            image:[]
         },
         {
             post_name:"Suite Rooms and Single AC Rooms",
             post_content:[],
-            url:"suite%20rooms%20and%20single%20ac%20rooms"
+            url:"suite%20rooms%20and%20single%20ac%20rooms",
+            image:[]
         },
         {
             post_name:"Queue management software for optimising wait time in OPDs",
             post_content:[],
-            url:"queue%20management%20software"
+            url:"queue%20management%20software",
+            image:[]
         }
     ]
 )
@@ -75,32 +96,38 @@ PostMap.set("gynae",
         {
             post_name:"Normal Delivery",
             post_content:[],
-            url:"normal%20delivery"
+            url:"normal%20delivery",
+            image:[]
         },
         {
             post_name:"Emergency and Elective Caesarean Section",
             post_content:[],
-            url:"emergency%20and%20elective%20caesarean%20section"
+            url:"emergency%20and%20elective%20caesarean%20section",
+            image:[]
         },
         {
             post_name:"Hysteroscopy",
             post_content:[],
-            url:"hysteroscopy"
+            url:"hysteroscopy",
+            image:[]
         },
         {
             post_name:"Laparoscopic Tubal Ligation",
             post_content:[],
-            url:"laparoscopic"
+            url:"laparoscopic",
+            image:[]
         },
         {
             post_name:"Hysterectomy/ Laparotomy",
             post_content:[],
-            url:"hysterectomy%20or%20%20laparotomy"
+            url:"hysterectomy%20or%20%20laparotomy",
+            image:[]
         },
         {
             post_name:"Assisted Reproduction",
             post_content:[],
-            url:"assisted%20reproduction"
+            url:"assisted%20reproduction",
+            image:[]
         }
     ]
 )
@@ -115,7 +142,8 @@ PostMap.set("ortho",
                 "Similarly in total knee replacement, also known as knee arthroplasty, the weight-bearing surfaces of the knee joint are replaced to relieve pain and disability. It is most commonly performed for osteoarthritis, and also for other knee diseases such as rheumatoid arthritis and psoriatic arthritis.",
                 "Knee replacement surgery can be performed as a partial or a total knee replacement. In general, the surgery consists of replacing the diseased or damaged joint surfaces of the knee with metal and plastic components shaped to allow continued motion of the knee. The best orthopaedic surgery in Gaya is offered in Vardaan where accurate alignment is our focus. Knee feels as new, without any pain and the patient is up on his/her feet within two days."
             ],
-            url:"total%20hip%20and%20knee%20replacement"
+            url:"total%20hip%20and%20knee%20replacement",
+            image:[KneeReplacement1,KneeReplacement2, HipJoint1, HipJoint2]
         },
         {
             post_name:"Arthroscopy & Sports Surgery",
@@ -124,7 +152,8 @@ PostMap.set("ortho",
                 "Sports injuries itself is a broader term. Sports injuries are commonly caused by overuse, direct impact, or the application of force that is greater than the body part can structurally withstand. Common injuries include bruises, sprains, strains, joint injuries and nose bleeds. As you can guess, not all sports injuries are from playing sports!",
                 "Sports injury in young children may cause lifelong deformities and scars if not treated timely"
             ],
-            url:"arthrosocopy"
+            url:"arthrosocopy",
+            image:[]
         },
         {
             post_name:"Spine and backache Surgery",
@@ -135,17 +164,20 @@ PostMap.set("ortho",
                 "Don't ignore Back pains. They can sometime relate to nervous system and bone issues which need immediate attention",
                 "Sometimes trauma, accidents or other medical condition require spinal surgery. Also, in certain cases of back pains, spine surgery may be your only treatment option. Sometimes, surgery is the only treatment for ailments. Vardaan Hospital has successfully treated several patients with spinal issues. By bringing spinal surgeries to Gaya, Vardaan has again proved itself to be the best orthopaedic centre in Gaya."
             ],
-            url:"spine%20and%20backache%20surgery"
+            url:"spine%20and%20backache%20surgery",
+            image:[Spine]
         },
         {
             post_name:"Complex Orthopaedics Trauma",
             post_content:[],
-            url:"complex%20orthopaedics%20trauma"
+            url:"complex%20orthopaedics%20trauma",
+            image:[]
         },
         {
             post_name:"Rheumatology",
             post_content:[],
-            url:"rheumatology"
+            url:"rheumatology",
+            image:[]
         }
     ]
 )
