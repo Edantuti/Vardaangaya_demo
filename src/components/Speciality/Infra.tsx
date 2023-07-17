@@ -25,7 +25,7 @@ export default function Infra(){
                         ))}
                     </ul>
                 </div>
-                <img src={OT} alt="gynaecology" className="h-auto w-full rounded mx-auto my-auto shadow row-span-2 order-1 md:order-2"/>
+                <img src={OT} alt="gynaecology" className="h-auto w-full rounded mx-auto my-auto shadow-md shadow-neutral-400 row-span-2 order-1 md:order-2"/>
             </article>
         </>
     )

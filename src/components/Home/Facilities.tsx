@@ -16,7 +16,7 @@ export default function Facilities(){
 		<section>
 			<h2 className="text-center text-6xl py-10">Facilites</h2>
 			{facilitiesObject.map((obj)=>(
-				<div key={obj.id} className="mx-5 mt-5 grid h-[30%] sm:h-[20%] gap-4 overflow-hidden rounded p-4 grid-rows-2  sm:grid-cols-2  bg-slate-50">
+				<div key={obj.id} className="mx-5 mt-5 grid h-[30%] sm:h-[20%] gap-4 overflow-hidden rounded p-4 grid-rows-2  sm:grid-cols-2">
 					<img className={(obj.id%2)===1?"row-span-2 rounded mx-auto sm:my-auto sm:w-[90%] bg-slate-100 shadow-md shadow-slate-600 order-1":"row-span-2 rounded mx-auto sm:my-auto sm:w-[90%]  bg-slate-100 shadow-md shadow-slate-600 order-1 md:order-2"} src={obj.img} alt={obj.name} />
 					<div className={(obj.id%2)===1?"my-auto flex flex-col gap-10 row-span-2 order-2":"my-auto flex flex-col gap-10 row-span-2 order-2 md:order-1"}>
 						<h2 className="rounded my-auto mx-auto text-center text-4xl font-mono">{obj.name}</h2>

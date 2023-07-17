@@ -13,7 +13,7 @@ export default function Ortho(){
     return (
         <>
             <article className="grid grid-rows-2 sm:grid-cols-2 mx-4">
-                <img src={Image4} alt="facilities" className="h-auto w-[80%] rounded mx-auto my-auto shadow  row-span-2 order-1" />
+                <img src={Image4} alt="facilities" className="h-auto w-[80%] rounded mx-auto my-auto shadow-md shadow-neutral-400 row-span-2 order-1" />
                     <div className="my-auto px-10 row-span-2 order-2">
                         <h2 className="text-2xl font-roboto mt-4">Orthopaedics</h2>
                         <ul className="flex flex-col gap-4 text-xl font-mono my-6"> 

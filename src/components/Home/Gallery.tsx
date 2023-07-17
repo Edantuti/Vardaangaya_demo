@@ -25,29 +25,29 @@ function Gallery(){
 		<h2 className="text-center text-5xl my-7">Gallery</h2>
 		<div className="flex md:flex-row flex-col gap-4 m-6">
 			<div className="flex flex-col gap-4 my-auto">
-				<img className="rounded shadow-md shadow-slate-300" src={Image1} alt="image 1"/>
-				<img className="rounded shadow-md shadow-slate-300" src={Image2} alt="image 2"/>
-				<img className="rounded shadow-md shadow-slate-300" src={Image12} alt="image 9"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image1} alt="image 1"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image2} alt="image 2"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image12} alt="image 9"/>
 			</div>
 			<div className="flex flex-col gap-4 my-auto">
-				<img className="rounded shadow-md shadow-slate-300" src={Image3} alt="image 3"/>
-				<img className="rounded shadow-md shadow-slate-300" src={Image4} alt="image 4"/>
-				<img className="rounded shadow-md shadow-slate-300" src={Image13} alt="image 11"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image3} alt="image 3"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image4} alt="image 4"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image13} alt="image 11"/>
 			</div>
 			<div className="flex flex-col gap-4 my-auto">
-				<img className="rounded shadow-md shadow-slate-300 " src={Image5} alt="image 5"/>
-				<img className="rounded shadow-md shadow-slate-300 " src={Image6} alt="image 6"/>
-				<img className="rounded shadow-md shadow-slate-300" src={Image14} alt="image14"/>
+				<img className="rounded shadow-md shadow-neutral-300 " src={Image5} alt="image 5"/>
+				<img className="rounded shadow-md shadow-neutral-300 " src={Image6} alt="image 6"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image14} alt="image14"/>
 			</div>
 			<div className="flex flex-col gap-4 my-auto">
-				<img className="rounded shadow-md shadow-slate-300" src={Image7} alt="image 7"/>
-				<img className="rounded shadow-md shadow-slate-300" src={Image8} alt="image 8"/>
-				<img className="rounded shadow-md shadow-slate-300" src={Image15} alt="image 15"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image7} alt="image 7"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image8} alt="image 8"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image15} alt="image 15"/>
 			</div>
 			<div className="flex flex-col gap-4 my-auto">
-				<img className="rounded shadow-md shadow-slate-300" src={Image9} alt="image 9"/>
-				<img className="rounded shadow-md shadow-slate-300" src={Image11} alt="image 11"/>
-				<img className="rounded shadow-md shadow-slate-300" src={Image16} alt="image 16"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image9} alt="image 9"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image11} alt="image 11"/>
+				<img className="rounded shadow-md shadow-neutral-300" src={Image16} alt="image 16"/>
 			</div>
 			
 		</div>
