@@ -6,7 +6,7 @@ export default function Updates(){
     ]
     return (
         <>
-            <section className="my-4">
+            <section className="my-4 min-h-screen max-h-full">
                 <h2 className="text-center text-2xl uppercase font-roboto">Updates</h2>
                 {updateObj.map((obj,value)=>(
                     <UpdatesPost key={value} post={obj}/>

@@ -26,13 +26,15 @@ export default function Contact():JSX.Element{
 
     return (
         <>
-            <section className="h-full">
+            <section className="max-h-full min-h-screen">
                 <h3 className=" text-center text-2xl uppercase font-roboto ">Contact</h3>
                 <div className="text-center my-10 w-10/12 mx-auto">
                     <p className="text-2xl my-10">We are available 24x7 over the phone. For all your needs give us a call at <a href="tel:+916203188133" className="text-blue-600">(+91) 62031-88-133.</a> You can also always visit us at our centre.</p>
                     <a href="https://goo.gl/maps/GQ7vDQbR9p3r1ChK6" target="_blank" rel="noopner" className="grid text-blue-600 hover:text-blue-800 visited:text-purple-600 transition-all"><span className="flex items-center mx-auto">Gewalbigha, Gaya, Bihar 823001  <FiExternalLink/></span></a>
                     <div className="text-[12px] md:text-md text-center grid grid-flow-row gap-5 md:grid-flow-col w-78 mx-auto my-5 uppercase font-medium">  <a href="tel:+916203188133" className="p-3 border-2 border-black hover:bg-black hover:text-white transition-all ">Phone</a><a href="mailto:contact@vardaangaya.com" className="p-3 border-2 border-black hover:bg-black hover:text-white transition-all hover:pb-1">contact@vardaangaya.com</a><a href="mailto:vardaangaya@gmail.com" className="p-3 border-2 border-black hover:bg-black hover:text-white transition-all hover:pb-1">vardaangaya@gmail.com</a></div>
-                    <Marquee pauseOnHover speed={100} className="flex md:max-h-96 sm:max-h-96 overflow-hidden md:my-10 my-0 z-0">
+                    
+                </div>
+                <Marquee pauseOnHover speed={100} className="flex md:max-h-96 sm:max-h-96 overflow-hidden md:my-10 my-0 z-0">
                         <img src={Image1} alt="hospital image" className="md:max-h-60 max-h-60 m-4 rounded "/>
                         <img src={Image2} alt="hospital image" className="md:h-96 max-h-60 m-4 rounded"/>
                         <img src={Image3} alt="hospital image" className="md:h-96 max-h-60 m-4 rounded"/>
@@ -51,7 +53,6 @@ export default function Contact():JSX.Element{
                         <img src={HipJoint2} alt="hospital image" className="md:h-96 max-h-60 m-4 rounded"/>
                         <img src={Spine} alt="hospital image" className="md:h-96 max-h-60 m-4 rounded" />   
                     </Marquee>
-                </div>
             </section>
             {/* //TODO: Create Form for the Contact Process
             //TODO: Create Marquee of photos

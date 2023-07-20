@@ -4,7 +4,7 @@ import Logo from "../assets/Site_Icon.png"
 
 export default function Footer(){
 	return (
-		<footer className="absolute w-full mt-6 sm:grid flex flex-col sm:grid-cols-3 sm:grid-rows-1 gap-4 bg-slate-200 p-4 rounded-tl rounded-tr  ">
+		<footer className="w-full mt-auto sm:grid flex flex-col sm:grid-cols-3 sm:grid-rows-1 gap-4 bg-slate-200 p-4 rounded-tl rounded-tr ">
 			<div className="mx-auto grid gap-4">
 				<div className="flex flex-col">
 					<img className="w-40 h-40 p-6" alt="" src={Logo} />
@@ -18,10 +18,10 @@ export default function Footer(){
 					</div>
 				</div>
 			</div>
-			<div className="text-gray-500 my-10 flex flex-col gap-2">
+			<div className="text-gray-500 my-10 flex flex-col gap-2 mx-16">
 				<h2 className="text-xl">Contact Us</h2>
-				<a href="mailto:vardaangaya@gmail.com" className="text-blue-400">vardaangaya@gmail.com</a>
-				<a href="tel:+916203188133" className="text-blue-400">+91 6203188133</a>
+				<a href="mailto:vardaangaya@gmail.com" className="text-blue-600">vardaangaya@gmail.com</a>
+				<a href="tel:+916203188133" className="text-blue-600">+91 6203188133</a>
 			</div>
 			<iframe className="border-none w-44 h-44 mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.3563559092077!2d84.9986428!3d24.7832483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32bd204dfb3f9%3A0xb146c96ce50e654b!2sVardaan%20Hospital%20%26%20Maternity%20Centre!5e0!3m2!1sen!2sin!4v1685556938775!5m2!1sen!2sin"	loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
 			<span className="text-center col-span-3 mx-auto text-gray-500"> &copy; 2023 Vardaan Hospital. All rights reserved. </span>
