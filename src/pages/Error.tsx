@@ -1,12 +1,13 @@
-import {FC} from "react"
+import { useRouteError } from "react-router-dom"
 
-const ErrorElement: FC = ():JSX.Element =>{
-    return (
-        <>
-            <h1 className="text-4xl text-center mt-[20%]">Error 404</h1>
-            <p className="text-2xl text-center my-5">Not Found</p>
-        </>
-    )
-} 
-
-export default ErrorElement
+export default function ErrorElement(){
+  //@ts-ignore
+  const error:{status:string, statusText:string, data:string} = useRouteError()
+  console.error(error)
+  return (
+    <div className="absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+      <h1>{error.status}-{error.statusText}</h1>
+      <p>{error.data}</p>
+    </div>
+  )
+}

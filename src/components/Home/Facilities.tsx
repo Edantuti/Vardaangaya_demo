@@ -1,29 +1,72 @@
-import OT from "../../assets/World_class_OT.jpg"
-import Infra from "../../assets/Infra.jpg"
-import Ortho from "../../assets/Ortho.jpg"
-import Team from "../../assets/Team.jpg"
-
-export default function Facilities(){
-	const facilitiesObject = [
-	{id:1, name:"High Tech Equipment", description:<span>We are also equipped with <b className="font-extrabold">in house diagnostic centre</b> with digital high frequency <b className="font-extrabold">X-ray</b>, <b className="font-extrabold">ultrasonography</b> with colour Doppler and a <b className="font-extrabold">pathology collection centre</b> in collaboration with Lal path labs.</span>, img:Infra},
-	{id:2, name:"World class OT", description:<span>We have <b className="font-extrabold">trained nursing staff, OT technicians</b> and administrative staff for <b className="font-extrabold">round the clock care of surgical in-patients and expecting mothers.</b> The hospital is equipped with <b className="font-extrabold">advance life support with transport and ICU ventilators and anaesthesia workstations.</b></span>, img:OT},
-	{id:3, name:"Cold Orthopaedics", description:<span>In a short span, Vardaan hospital has carved a niche name for itself in <b className="font-extrabold">elective orthopaedic surgeries like -Total knee & hip replacement, spine surgery and arthroscopic ligament reconstructions,</b> the orthopaedic division being popularly known as ‘Cold Orthopaedics’.</span>, img:Ortho},
-	{id:4, name:"Highly Skilled Team", description:<span><b className="font-extrabold">Ability to handle advanced and high risk obstetrics on regular basis</b> has also resulted in reverse patient drain from many major cities around to our hospital in Gaya over last few years.</span>, img:Team},
-		]
-
-
-	return (
-		<section>
-			<h2 className="text-center text-6xl py-10">Facilites</h2>
-			{facilitiesObject.map((obj)=>(
-				<div key={obj.id} className="mx-5 mt-5 grid h-[30%] sm:h-[20%] gap-4 overflow-hidden rounded p-4 grid-rows-2  sm:grid-cols-2">
-					<img className={(obj.id%2)===1?"row-span-2 rounded mx-auto sm:my-auto sm:w-[90%] bg-slate-100 shadow-md shadow-slate-600 order-1":"row-span-2 rounded mx-auto sm:my-auto sm:w-[90%]  bg-slate-100 shadow-md shadow-slate-600 order-1 md:order-2"} src={obj.img} alt={obj.name} />
-					<div className={(obj.id%2)===1?"my-auto flex flex-col gap-10 row-span-2 order-2":"my-auto flex flex-col gap-10 row-span-2 order-2 md:order-1"}>
-						<h2 className="rounded my-auto mx-auto text-center text-4xl font-mono">{obj.name}</h2>
-						<p className="text-lg rounded font-roboto">{obj.description}</p>
-					</div>
-				</div>
-			))}
-		</section>
-		)
+import Infra from '../../assets/Infra.jpg';
+import Team from '../../assets/Team.jpg';
+import Infra1 from '../../assets/gallery/image1.jpg';
+import Room from '../../assets/gallery/image3.jpg';
+import Filler from '../../assets/Filler.svg';
+import {
+  SpecialityGridContainer,
+  SpecialityListContainer,
+  SpecialitySectionContainer,
+} from '../Facilities';
+export default function Facilities() {
+  return (
+    <>
+      <h2 className='md:mx-0 mx-auto w-fit py-10 text-4xl font-medium'>
+        Facilities & InfraStructure
+      </h2>
+      <SpecialitySectionContainer>
+        <SpecialityGridContainer>
+          <SpecialityListContainer>
+            <li>
+              X-Ray Centre (High frequency X-ray with CareStream computerised
+              radiography)
+            </li>
+            <li>Ultrasound (Starting August 2021)</li>
+            <li>24x7 In-house Pharmacy</li>
+            <li>
+              Pathology collection centre in collaboration with Global
+              Diagnostics, a channel partner of Lal Path Labs, New Delhi
+            </li>
+          </SpecialityListContainer>
+          <img
+            src={Infra}
+            alt='Infrastructure'
+            className=' aspect-square rounded object-cover md:h-72 h-44'
+          />
+          <img
+            src={Room}
+            className='aspect-square rounded object-cover md:h-72 h-44'
+            alt='Room'
+          />
+          <SpecialityListContainer>
+            <li>
+              State of art Operation Theatre (OT) with active infection control
+              program
+            </li>
+            <li>Air-conditioned patient waiting room</li>
+            <li>Suite rooms and Single ac Rooms</li>
+            <li>Queue management system</li>
+          </SpecialityListContainer>
+        </SpecialityGridContainer>
+        <SpecialityGridContainer>
+          <div className='relative mx-auto my-auto'>
+            <img src={Filler} />
+          </div>
+          <img
+            src={Infra1}
+            alt='Infrastructure'
+            className=' aspect-square rounded object-cover md:h-64 h-48'
+          />
+          <img
+            src={Team}
+            className='aspect-square rounded object-cover md:h-64 h-48'
+            alt='Infrastructure'
+          />
+          <div className='relative mx-auto my-auto'>
+            <img src={Filler} />
+          </div>
+        </SpecialityGridContainer>
+      </SpecialitySectionContainer>
+    </>
+  );
 }

@@ -1,18 +1,14 @@
-  /** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-
+    extend: {},
+    fontFamily: {
+      roboto: ['Roboto Mono', 'monospace'],
     },
-    fontFamily:{
-      'roboto':['Roboto Mono', 'monospace']
-    }
   },
-  plugins: [
-    ],
-}
-
+  plugins: [],
+};

@@ -1,28 +1,61 @@
-import { Dispatch, FC, SetStateAction } from "react"
-import { Link} from "react-router-dom"
+import { Dispatch, SetStateAction } from 'react';
+import { Link } from 'react-router-dom';
 
-import Logo from "../assets/Site_Icon.png"
+import Logo from '../assets/Site_Icon.png';
 
-interface IMenuProps{
-    visible:boolean
-    changeVisibility: Dispatch<SetStateAction<boolean>>
-}
+const Menu = (props:{visible:boolean, changeVisibility:Dispatch<SetStateAction<boolean>>}): JSX.Element => {
+  return (
+    <>
+      <nav
+        className={
+          props.visible
+            ? 'fixed right-0 top-0 z-10 mb-4 h-full w-full bg-white shadow-lg transition-all sm:w-96'
+            : 'fixed -right-96 top-0 z-10 mb-4 h-full w-96 bg-white transition-all sm:w-96'
+        }
+      >
+        <img src={Logo} alt='' className='mx-auto my-28 h-24 w-24' />
+        <div className='mx-auto grid grid-flow-row'>
+          <Link
+            to='/'
+            onClick={() => {
+              props.changeVisibility(!props.visible);
+            }}
+            className='px-2 py-1'
+          >
+            Home
+          </Link>
+          <Link
+            to='/gallery'
+            onClick={() => {
+              props.changeVisibility(!props.visible);
+            }}
+            className='px-2 py-1'
+          >
+            Photo Gallery
+          </Link>
+          <Link
+            to='/blogs'
+            onClick={() => {
+              props.changeVisibility(!props.visible);
+            }}
+            className='px-2 py-1'
+          >
+            Blog
+          </Link>
 
-const Menu: FC<IMenuProps> = (props): JSX.Element => {
-    
-    return (
-        <>
-            <nav className={props.visible?"fixed mb-4 sm:w-96 w-full bg-white h-full top-0 right-0 transition-all shadow-lg z-10":"fixed sm:w-96 w-96 mb-4 bg-white h-full top-0 -right-96 transition-all z-10"}>
-                <img src={Logo} alt="" className="w-24 h-24 mx-auto my-28"/>
-                <div className="grid grid-flow-row mx-auto">
-                    <Link to="/" onClick={()=>{props.changeVisibility(!props.visible)}} className="px-2 py-1">Home</Link>
-                    <Link to="/speciality" onClick={()=>{props.changeVisibility(!props.visible)}} className="px-2 py-1">Speciality</Link>
-                    <Link to="/updates" onClick={()=>{props.changeVisibility(!props.visible)}} className="px-2 py-1">Updates</Link>
-                    <Link to="/contact" onClick={()=>{props.changeVisibility(!props.visible)}} className="px-2 py-1">Contact</Link>
-                </div>
-            </nav>
-        </>
-    )
-}
+          <Link
+            to='/contact'
+            onClick={() => {
+              props.changeVisibility(!props.visible);
+            }}
+            className='px-2 py-1'
+          >
+            Contact
+          </Link>
+        </div>
+      </nav>
+    </>
+  );
+};
 
-export default Menu
+export default Menu;

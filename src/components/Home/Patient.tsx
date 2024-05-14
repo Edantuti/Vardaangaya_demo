@@ -1,7 +1,3 @@
-export default function Patient(){
-	return (
-		<div>
-			
-		</div>
-		)
+export default function Patient() {
+  return <div></div>;
 }
