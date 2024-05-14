@@ -9,12 +9,14 @@
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "prettier . --check --ignore-path .gitignore",
-    "format:fix": "prettier . --write --ignore-path .gitignore "
+    "format:fix": "prettier . --write --ignore-path .gitignore ",
+    "prepare": "husky"
   },
   "dependencies": {
     "caniuse-lite": "^1.0.30001566",
     "embla-carousel-autoplay": "^8.0.4",
     "embla-carousel-react": "^8.0.0",
+    "husky": "^9.0.11",
     "react": "^18.2.0",
     "react-cookie": "^4.1.1",
     "react-dom": "^18.2.0",
@@ -39,5 +41,8 @@
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
+  },
+  "husky": {
+    "pre-commit": "prettier . --write --ignore-path .gitignore && npm run build"
   }
 }
