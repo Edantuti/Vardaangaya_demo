@@ -21,7 +21,7 @@ export default function Card({
       <h3 className=' py-2 text-lg'>{title}</h3>
       <p className='line-clamp-4 text-xs'>{description}</p>
       <aside>
-        <Link to={link} className='text-sm text-blue-700'>
+        <Link to={link} title={title} className='text-sm text-blue-700'>
           {' '}
           Read More{' '}
         </Link>

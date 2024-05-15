@@ -6,8 +6,7 @@ import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    
-    <main className="xl:mx-48 md:mx-28 mx-5">
+    <main className='mx-5 md:mx-28 xl:mx-48'>
       <Header />
       {/* <NavBar/> */}
       <hr className='h-1 bg-sky-400' />

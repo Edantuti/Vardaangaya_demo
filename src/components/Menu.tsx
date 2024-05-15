@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../assets/Site_Icon.png';
 
-const Menu = (props:{visible:boolean, changeVisibility:Dispatch<SetStateAction<boolean>>}): JSX.Element => {
+const Menu = (props: {
+  visible: boolean;
+  changeVisibility: Dispatch<SetStateAction<boolean>>;
+}): JSX.Element => {
   return (
     <>
       <nav
