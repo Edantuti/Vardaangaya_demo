@@ -2,7 +2,7 @@ import Infra from '../../assets/Infra.jpg';
 import Team from '../../assets/Team.jpg';
 import Infra1 from '../../assets/gallery/image1.jpg';
 import Room from '../../assets/gallery/image3.jpg';
-import Filler from '../../assets/Filler.svg';
+import { FillerComponent } from '../Facilities';
 import {
   SpecialityGridContainer,
   SpecialityListContainer,
@@ -11,12 +11,12 @@ import {
 export default function Facilities() {
   return (
     <>
-      <h2 className='md:mx-0 mx-auto w-fit py-10 text-4xl font-medium'>
+      <h2 className='md:mx-0 mx-auto w-fit md:py-10 py-5 d:text-4xl text-2xl font-medium'>
         Facilities & InfraStructure
       </h2>
       <SpecialitySectionContainer>
         <SpecialityGridContainer>
-          <SpecialityListContainer>
+          <SpecialityListContainer order="1">
             <li>
               X-Ray Centre (High frequency X-ray with CareStream computerised
               radiography)
@@ -24,21 +24,21 @@ export default function Facilities() {
             <li>Ultrasound (Starting August 2021)</li>
             <li>24x7 In-house Pharmacy</li>
             <li>
-              Pathology collection centre in collaboration with Global
-              Diagnostics, a channel partner of Lal Path Labs, New Delhi
+              Pathology collection centre (with Global
+              Diagnostics, a channel partner of Lal Path Labs, New Delhi)
             </li>
           </SpecialityListContainer>
           <img
             src={Infra}
             alt='Infrastructure'
-            className=' aspect-square rounded object-cover md:h-72 h-44'
+            className=' aspect-square rounded object-cover md:h-72 h-44 order-2'
           />
           <img
             src={Room}
             className='aspect-square rounded object-cover md:h-72 h-44'
             alt='Room'
           />
-          <SpecialityListContainer>
+          <SpecialityListContainer order='3'>
             <li>
               State of art Operation Theatre (OT) with active infection control
               program
@@ -46,12 +46,11 @@ export default function Facilities() {
             <li>Air-conditioned patient waiting room</li>
             <li>Suite rooms and Single ac Rooms</li>
             <li>Queue management system</li>
+            
           </SpecialityListContainer>
         </SpecialityGridContainer>
         <SpecialityGridContainer>
-          <div className='relative mx-auto my-auto'>
-            <img src={Filler} />
-          </div>
+        <FillerComponent/> 
           <img
             src={Infra1}
             alt='Infrastructure'
@@ -62,9 +61,7 @@ export default function Facilities() {
             className='aspect-square rounded object-cover md:h-64 h-48'
             alt='Infrastructure'
           />
-          <div className='relative mx-auto my-auto'>
-            <img src={Filler} />
-          </div>
+          <FillerComponent/>
         </SpecialityGridContainer>
       </SpecialitySectionContainer>
     </>

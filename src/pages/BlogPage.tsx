@@ -7,7 +7,7 @@ export default function BlogPage() {
   const blog_name = url.substring(url.lastIndexOf('/')+1).toLowerCase();
   const blog_details = PostMap.get(blog_name);
   return (
-  <section className="min-h-screen py-10 lg:mx-48 md:mx-28 mx-10">
+  <section className="min-h-screen py-10 xl:mx-48 lg:mx-28 md:mx-16 mx-10">
     <img src={blog_details?.image[0] || ""} alt={blog_details?.title} className="h-40 w-80 md:h-96 md:w-auto aspect-[7/1] bg-slate-200 rounded object-cover object-top" />
     <h1 className="py-2 text-3xl">{blog_details?.title}</h1>
     <i className="italic">{blog_details?.description}</i>

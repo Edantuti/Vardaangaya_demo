@@ -20,7 +20,7 @@ const Menu = (props:{visible:boolean, changeVisibility:Dispatch<SetStateAction<b
             onClick={() => {
               props.changeVisibility(!props.visible);
             }}
-            className='px-2 py-1'
+            className='px-2 py-1 text-center'
           >
             Home
           </Link>
@@ -29,7 +29,7 @@ const Menu = (props:{visible:boolean, changeVisibility:Dispatch<SetStateAction<b
             onClick={() => {
               props.changeVisibility(!props.visible);
             }}
-            className='px-2 py-1'
+            className='px-2 py-1 text-center'
           >
             Photo Gallery
           </Link>
@@ -38,7 +38,7 @@ const Menu = (props:{visible:boolean, changeVisibility:Dispatch<SetStateAction<b
             onClick={() => {
               props.changeVisibility(!props.visible);
             }}
-            className='px-2 py-1'
+            className='px-2 py-1 text-center'
           >
             Blog
           </Link>
@@ -48,7 +48,7 @@ const Menu = (props:{visible:boolean, changeVisibility:Dispatch<SetStateAction<b
             onClick={() => {
               props.changeVisibility(!props.visible);
             }}
-            className='px-2 py-1'
+            className='px-2 py-1 text-center'
           >
             Contact
           </Link>

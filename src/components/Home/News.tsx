@@ -6,7 +6,7 @@ import News3 from '../../assets/Computer_Navigation_Alignment_3.jpg';
 export default function News() {
   return (
     <>
-      <h2 className='py-10 text-4xl font-medium'>News & Events</h2>
+      <h2 className='py-10 md:text-4xl text-2xl font-medium'>News & Events</h2>
       <section className='grid grid-cols-1 gap-5 md:grid-cols-2'>
         <figure className='space-y-4'>
           <span>

@@ -1,13 +1,16 @@
-import Logo from '../assets/Site_Icon.png';
+import { FaFacebook, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-800 flex flex-col items-center rounded-t px-4 py-2">
-      <img className="h-20 w-20 rounded" src={Logo}/>
-      <span className='col-span-3 mx-auto text-center text-white'>
+    <footer className="bg-blue-800 flex rounded-t px-10 py-2 justify-between items-center h-20">
+      <span className='text-white text-sm'>
         {' '}
         &copy; 2023 Vardaan Hospital. All rights reserved.{' '}
       </span>
+      <aside className="flex gap-6">
+        <a href="https://www.facebook.com/Vardaan-hospital-and-maternity-centre-105063481385168/" target="_blank">{<FaFacebook className="fill-white w-4 h-4"/>}</a>
+        <a href="https://www.youtube.com/channel/UC8_GuJg7y0cqghgSZj8xGBA" target="_blank">{<FaYoutube className="fill-white  w-4 h-4"/>}</a>
+      </aside>
     </footer>
   );
 }

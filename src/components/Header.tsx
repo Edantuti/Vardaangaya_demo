@@ -19,7 +19,7 @@ const Header = () => {
           className='h-16 w-16 md:h-20 md:w-20'
         />
         <div className='ml-2 mt-auto'>
-          <h1 className='font-bold uppercase md:text-2xl'>
+          <h1 className='font-bold uppercase md:text-2xl text-sm'>
             Vardaan Hospital & Maternity Center, Gaya
           </h1>
           <div className='flex items-center gap-4'>
@@ -45,7 +45,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <nav className='mt-auto hidden gap-5 text-xl font-extrabold xl:flex'>
+      <nav className='mt-auto hidden gap-5 text-xl font-medium xl:flex'>
         <Link to='/' className='transition-all hover:underline'>
           Home
         </Link>

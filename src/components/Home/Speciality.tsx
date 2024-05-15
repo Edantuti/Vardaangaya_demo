@@ -2,8 +2,9 @@ import OT from '../../assets/World_class_OT.jpg';
 import Ortho from '../../assets/Ortho.jpg';
 import P1 from '../../assets/OT1.png';
 import P2 from '../../assets/Computerised_Alignment.png';
-import Filler from '../../assets/Filler.svg';
+
 import {
+  FillerComponent,
   SpecialityGridContainer,
   SpecialityListContainer,
   SpecialitySectionContainer,
@@ -11,15 +12,15 @@ import {
 export default function Speciality() {
   return (
     <>
-      <h2 className='py-10 text-4xl font-medium'>Speciality</h2>
+      <h2 className='py-10 md:text-4xl text-2xl font-medium'>Speciality</h2>
       <SpecialitySectionContainer>
         <SpecialityGridContainer>
           <img
             src={OT}
             alt='Operation Theatre'
-            className=' aspect-square rounded object-cover md:h-72 h-44'
+            className=' aspect-square rounded object-cover md:h-72 h-40'
           />
-          <SpecialityListContainer>
+          <SpecialityListContainer order="1" >
             <li>Total Hip and Knee Replacement</li>
             <li>Arthroscopy & Sports Surgery</li>
             <li>Spine and Backache Surgery</li>
@@ -35,7 +36,7 @@ export default function Speciality() {
           </SpecialityListContainer>
           <img
             src={Ortho}
-            className='aspect-square rounded object-cover md:h-72 h-44'
+            className='aspect-square rounded object-cover md:h-72 h-40'
             alt='Ortho'
           />
         </SpecialityGridContainer>
@@ -43,17 +44,13 @@ export default function Speciality() {
           <img
             src={P1}
             alt='P1'
-            className=' aspect-square rounded object-cover md:h-64 h-48'
+            className=' aspect-square rounded object-cover md:h-64 h-40'
           />
-          <div className='relative mx-auto my-auto'>
-            <img src={Filler} />
-          </div>
-          <div className='relative mx-auto my-auto'>
-            <img src={Filler} />
-          </div>
+          <FillerComponent/>
+          <FillerComponent/>
           <img
             src={P2}
-            className='aspect-square rounded object-cover md:h-64 h-48'
+            className='aspect-square rounded object-cover md:h-64 h-40'
             alt='Dr. Megha Sinha'
           />
         </SpecialityGridContainer>
