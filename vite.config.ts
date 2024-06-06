@@ -21,9 +21,6 @@ export default defineConfig({
           if(id.match('embla')){
             return '@embla'
           }
-          if(id.match('react')){
-            return '@react'
-          }
         }
       }
     }
