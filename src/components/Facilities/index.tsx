@@ -42,7 +42,7 @@ export const SectionContainer = ({ children }: { children: ReactNode }) => {
 export const FillerComponent = () => {
   return (
     <div className='relative mx-auto my-auto hidden md:block'>
-      <img src={Filler} />
+      <img src={Filler} alt="Filler" />
     </div>
   );
 };

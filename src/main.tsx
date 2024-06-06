@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
@@ -10,12 +10,18 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from 'react-router-dom';
-import Home from './pages/Home.tsx';
-import Gallery from './pages/Gallery.tsx';
-import Blog from './pages/Blog.tsx';
-import BlogPage from './pages/BlogPage.tsx';
-import Contact from './pages/Contact.tsx';
-import ErrorElement from './pages/Error.tsx';
+// import Home from './pages/Home.tsx';
+// import Gallery from './pages/Gallery.tsx';
+// import Blog from './pages/Blog.tsx';
+// import BlogPage from './pages/BlogPage.tsx';
+// import Contact from './pages/Contact.tsx';
+// import ErrorElement from './pages/Error.tsx';
+const Home = lazy(()=>import('./pages/Home.tsx'))
+const Gallery = lazy(()=>import('./pages/Gallery.tsx'))
+const Blog = lazy(()=>import('./pages/Blog.tsx'))
+const BlogPage = lazy(()=>import('./pages/BlogPage.tsx'))
+const Contact = lazy(()=>import('./pages/Contact.tsx'))
+const ErrorElement = lazy(()=>import('./pages/Error.tsx'))
 
 const route = createBrowserRouter(
   createRoutesFromElements(

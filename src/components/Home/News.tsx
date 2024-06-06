@@ -51,18 +51,21 @@ export default function News() {
               <PhotoView src={News1}>
                 <img
                   src={News1}
+                  alt="News Image"
                   className='aspect-square h-60 rounded border border-neutral-400 object-cover'
                 />
               </PhotoView>
               <PhotoView src={News2}>
                 <img
                   src={News2}
+                  alt="News Image"
                   className='aspect-square h-60 rounded border border-neutral-400 object-cover'
                 />
               </PhotoView>
               <PhotoView src={News3}>
                 <img
                   src={News3}
+                  alt="News Image"
                   className='aspect-square h-60 rounded border border-neutral-400 object-cover'
                 />
               </PhotoView>

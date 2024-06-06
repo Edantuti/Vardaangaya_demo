@@ -55,7 +55,7 @@ const DoctorDescription = ({
 const DoctorTitle = ({ value }: { value: string }) => {
   return (
     <div className='relative mx-auto my-auto'>
-      <img src={DQuotes} className='absolute -z-10' />
+      <img src={DQuotes} className='absolute -z-10' alt="Commda" />
       <p className={`ml-4 mt-2 md:text-sm lg:text-lg xl:text-2xl`}>{value}</p>
     </div>
   );
